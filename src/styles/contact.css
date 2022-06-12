@@ -1,0 +1,48 @@
+.list{
+    padding: 5px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    width: 40%;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border: 1px solid #E5E5E5;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 0px 15px;
+}
+
+.one-contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cAvatar {
+    width: 10%;
+    height: 90px;
+}
+
+.cInfo {
+    margin-left: 20px;
+}
+
+.cname {
+    font-size: 20px;
+}
+
+.cphone {
+    font-size: 16px;
+}
+
+.phIcon{
+    height: 40px;
+    width: 40px;
+}

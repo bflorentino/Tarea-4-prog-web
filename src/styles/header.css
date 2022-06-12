@@ -1,0 +1,28 @@
+.header{
+    background-color: #202C33;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.header h1 {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.header button {
+    height: 40px;
+    padding: 0px 5px;
+    margin-right: 15px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header button:hover{
+    text-decoration: underline;
+}

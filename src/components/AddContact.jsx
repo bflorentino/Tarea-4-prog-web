@@ -21,6 +21,7 @@ const AddContact = ({setContactListMode, contacts, setContacts}) => {
       addContact(contactToAdd).then(contact => {
         setContacts([...contacts, contact])
         setContactListMode(true);
+        alert("El contacto se ha agregado exitosamente")
       })
     }else{
       setErrorMessage(formValidation)
@@ -41,7 +42,9 @@ const AddContact = ({setContactListMode, contacts, setContacts}) => {
 
   return (
     <>
-      <form onSubmit={addContactHandler}>
+    <div className='form-container'>
+      <h1>Agregar nuevo contacto</h1>
+      <form onSubmit={addContactHandler} className="form-add-contact">
         
         <input 
             type="text" 
@@ -68,12 +71,14 @@ const AddContact = ({setContactListMode, contacts, setContacts}) => {
         />
 
         {
-          errorMessage && <div><p>{errorMessage}</p></div>
+          errorMessage && <div className='error'><p>{errorMessage}</p></div>
         }
         
-        <button>Agregar Contacto</button>
-        <button onClick={() => setContactListMode(true) }>Volver</button>
+        <button className='green'>Agregar Contacto</button>
+        <button className='red' onClick={() => setContactListMode(true) }>Volver</button>
       </form>
+
+    </div>
     </>
   )
 }

@@ -7,9 +7,10 @@ const Header = ({setContactListMode}) => {
   }
 
   return (
-    <div>
+    <header className='header'>
+      <h1>Agenda de contactos</h1>
       <button onClick={openAddContacts}>Nuevo Contacto</button>
-    </div>
+    </header>
   )
 }
 

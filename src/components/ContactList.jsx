@@ -5,12 +5,14 @@ const ContactList = ({contacts}) => {
 
     return (
     <>
-        <h1>Lista de contactos</h1>
+    <div className='list'>
+        <h1 className='title'>Lista de contactos</h1>
         {
             contacts.map((contact, i) => (
                 <Contact key={i} contact={contact} />
             ))
         }
+    </div>
     </>
   )
 }

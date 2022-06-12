@@ -1,0 +1,53 @@
+.form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.form-add-contact {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #fff;
+}
+
+.form-add-contact input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    padding: 15px 0px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form-add-contact button {
+   margin-top: 10px;
+    width: 100%;
+    padding: 6px 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #69C822;
+}
+
+.red {
+    background-color: #DF5959;
+}
+
+.error{
+    margin-top: 10px;
+}
+
+.error p {
+    color: #DF5959;
+}
